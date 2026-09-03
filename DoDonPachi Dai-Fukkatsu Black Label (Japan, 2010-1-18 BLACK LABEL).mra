@@ -27,27 +27,26 @@
 -->
 <misterromdescription>
     <about author="ika-musume" source="https://github.com/ika-musume/ikacore_CV1k"/>
-    <name>Puzzle! Mushihime-Tama (Japan, 2005/09/09.MASTER VER)</name>
-    <setname>mushitam</setname>
-    <year>2005</year>
+    <name>DoDonPachi Dai-Fukkatsu Black Label (Japan, 2010/1/18 BLACK LABEL)</name>
+    <setname>dfkbl</setname>
+    <year>2010</year>
     <manufacturer>Cave</manufacturer>
     <category>Shooter</category>
     <rbf>ikacore_CV1k</rbf>
 
-    <rom index="1" address="0x34000000" zip="mushitam.zip" md5="none">
-        <part name="mushitam_u2" crc="8ba498ab"/>
+    <rom index="1" address="0x34000000" zip="dfkbl.zip" md5="none">
+        <part name="u2" crc="29f9d73a"/>
     </rom>
 
-    <rom index="2" address="0x3D000000" zip="mushitam.zip" md5="none">
-        <part name="u23" crc="701a912a"/>
+    <rom index="2" address="0x3D000000" zip="dfkbl.zip" md5="none">
+        <part name="u23" crc="36d4093b"/>
         <part repeat="0x400000">00</part>
-        <part name="u24" crc="6feeb9a1"/>
+        <part name="u24" crc="31f9eb0a"/>
         <part repeat="0x400000">00</part>
     </rom>
 
-    <rom index="0" zip="mushitam.zip" md5="none">
-        <part name="mushitam_u4" crc="c49eb6b1"/>
-        <part name="mushitam_u4" crc="c49eb6b1"/>
+    <rom index="0" zip="dfkbl.zip" md5="none">
+        <part name="u4" crc="8092ca9d"/>
     </rom>
 
     <buttons names="B1,B2,B3,B4,Start,Coin,Test,Service" default="A,B,X,Y,Start,R,L,Select"/>
