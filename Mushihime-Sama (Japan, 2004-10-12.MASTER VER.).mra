@@ -1,6 +1,6 @@
 <!--
-  ikacore_CV1k MRA - Ibara (Japan, 2005/03/22 MASTER VER..).
-  
+  ikacore_CV1k MRA - Mushihime-Sama (Japan, 2004/10/12.MASTER VER.).
+
   Rom order is deliberate - DDR3 first, index 0 LAST.  Index 0's download
   is what finally releases the CPU, so every image is in place before the
   core runs, and any spurious run in an inter-rom gap is wiped by the u4
@@ -27,27 +27,27 @@
 -->
 <misterromdescription>
     <about author="ika-musume" source="https://github.com/ika-musume/ikacore_CV1k"/>
-    <name>Puzzle! Mushihime-Tama (Japan, 2005/09/09.MASTER VER)</name>
-    <setname>mushitam</setname>
-    <year>2005</year>
+    <name>Mushihime-Sama (Japan, 2004/10/12.MASTER VER.)</name>
+    <setname>mushisam</setname>
+    <year>2004</year>
     <manufacturer>Cave</manufacturer>
     <category>Shooter</category>
     <rbf>ikacore_CV1k</rbf>
 
-    <rom index="1" address="0x34000000" zip="mushitam.zip" md5="none">
-        <part name="mushitam_u2" crc="8ba498ab"/>
+    <rom index="1" address="0x34000000" zip="mushisam.zip" md5="none">
+        <part name="mushisam_u2" crc="4f0a842a"/>
     </rom>
 
-    <rom index="2" address="0x3D000000" zip="mushitam.zip" md5="none">
-        <part name="u23" crc="701a912a"/>
+    <rom index="2" address="0x3D000000" zip="mushisam.zip" md5="none">
+        <part name="u23" crc="138e2050"/>
         <part repeat="0x400000">00</part>
-        <part name="u24" crc="6feeb9a1"/>
+        <part name="u24" crc="e3d05c9f"/>
         <part repeat="0x400000">00</part>
     </rom>
 
-    <rom index="0" zip="mushitam.zip" md5="none">
-        <part name="mushitam_u4" crc="c49eb6b1"/>
-        <part name="mushitam_u4" crc="c49eb6b1"/>
+    <rom index="0" zip="mushisam.zip" md5="none">
+        <part name="mushisam_u4" crc="15321b30"/>
+        <part name="mushisam_u4" crc="15321b30"/>
     </rom>
 
     <buttons names="B1,B2,B3,B4,Start,Coin,Test,Service" default="A,B,X,Y,Start,R,L,Select"/>

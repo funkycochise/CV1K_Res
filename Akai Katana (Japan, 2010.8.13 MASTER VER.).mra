@@ -1,3 +1,30 @@
+<!--
+  ikacore_CV1k MRA - Ibara (Japan, 2005/03/22 MASTER VER..).
+  
+  Rom order is deliberate - DDR3 first, index 0 LAST.  Index 0's download
+  is what finally releases the CPU, so every image is in place before the
+  core runs, and any spurious run in an inter-rom gap is wiped by the u4
+  download's own reset hold.
+
+    <rom index="1">  DDR3 0x34000000  u2  NAND dump incl. spare (132 MiB,
+                                          exact size)
+    <rom index="2">  DDR3 0x3D000000  u23 YMZ chip 0, zero-padded to the
+                                          8 MiB slot
+                     DDR3 0x3D800000  u24 YMZ chip 1, zero-padded to the
+                                          8 MiB slot
+    <rom index="0">  ioctl stream     u4  program NOR x2 (2 MiB file listed
+                                          twice = the undecoded-A21 mirror
+                                          the boot ROM expects)
+
+  The DDR3 image is byte-for-byte what the old single stream produced:
+  the CV1k_ioctl packer laid those regions out as verbatim linear copies
+  of the dump files at exactly these addresses (srcs/rtl/CV1k_ioctl.sv),
+  so a memcpy reproduces it.  The zero pads are kept for that reason.
+
+  All parts stream RAW file bytes - byte-pair order is handled inside the
+  core (NOR_BSWAP=0 assembles {odd,even}; MAME dumps stream as stored).
+  <rbf> must match the deployed rbf base name.
+-->
 <misterromdescription>
     <about author="ika-musume" source="https://github.com/ika-musume/ikacore_CV1k"/>
     <name>Akai Katana (Japan, 2010/ 8/13 MASTER VER.)</name>
@@ -7,13 +34,19 @@
     <category>Shooter</category>
     <rbf>ikacore_CV1k</rbf>
 
-    <rom index="0" zip="akatana.zip" md5="none">
-        <part name="u4" crc="613fd380"/>
+    <rom index="1" address="0x34000000" zip="akatana.zip" md5="none">
         <part name="u2" crc="89a2e1a5"/>
+    </rom>
+
+    <rom index="2" address="0x3D000000" zip="akatana.zip" md5="none">
         <part name="u23" crc="34a67e24"/>
         <part repeat="0x400000">00</part>
         <part name="u24" crc="10760fed"/>
         <part repeat="0x400000">00</part>
+    </rom>
+
+    <rom index="0" zip="akatana.zip" md5="none">
+        <part name="u4" crc="613fd380"/>
     </rom>
 
     <buttons names="B1,B2,B3,B4,Start,Coin,Test,Service" default="A,B,X,Y,Start,R,L,Select"/>
