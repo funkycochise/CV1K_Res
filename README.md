@@ -1,5 +1,6 @@
-CV1K
-https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/CaveCV1K.zip
+# CV1K_Res
 
-rom script :
-https://github.com/funkycochise/Insert-Coin/blob/main/Scripts/%23insertcoin/update/mame_cv1k.sh
+Resources for the CV1K MAME core (MiSTer FPGA).
+
+- **CV1K archive**: https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/CaveCV1K.zip
+- **ROM script**: https://github.com/funkycochise/Insert-Coin/blob/main/Scripts/%23insertcoin/update/mame_cv1k.sh
