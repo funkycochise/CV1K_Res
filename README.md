@@ -1,5 +1,8 @@
 # CV1K_Res
 
+![Akai Katana](https://gamoovernet.pixhotel.fr/pics_gamoovernet890px/v2/2026/09/04/20260904155116-funkycochise-20260903_202334-screen.png)
+
+
 Resources for the CV1K MAME core (MiSTer FPGA).
 
 - **CV1K mra archive**: https://raw.githubusercontent.com/funkycochise/Insert-Coin_Res/main/CaveCV1K.zip
