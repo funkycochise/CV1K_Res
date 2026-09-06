@@ -1,6 +1,6 @@
 # CV1K_Res
 
-![Akai Katana](https://gamoovernet.pixhotel.fr/pics_gamoovernet890px/v2/2026/09/04/20260904155116-funkycochise-20260903_202334-screen.png)
+![Deathsmiles MBL](https://gamoovernet.pixhotel.fr/pics_gamoovernet890px/v2/2026/09/04/20260904155412-funkycochise-20260903_203500-screen.png)
 
 
 Resources for the CV1K MAME core (MiSTer FPGA).
